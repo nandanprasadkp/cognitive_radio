@@ -49,7 +49,7 @@ pip install -r requirements.txt
 
 ---
 
-## ▶️ How to Run
+##  How to Run
 
 ### Step 1: Generate Dataset (MATLAB)
 
@@ -69,44 +69,11 @@ python train.py
 
 ```
 python predict.py
-```
 
 ---
 
-## 📸 Simulink Model
 
-This shows the multi-channel signal generation setup.
-
-![Simulink](5-results/signalgenerationsetup.png)
-
----
-
-## 📡 Generated Signal
-
-This represents the combined RF signal across channels.
-
-![Signal](5-results/generatedsignal.jpeg)
-
----
-
-## 🤖 Output
-
-CNN detects occupied and free spectrum windows.
-
-![Output](5-results/output.jpeg)
-
----
-
-## 📊 Output Summary
-
-* Total Windows: 8104
-* Busy Channels: 8095
-* Free Channels: 9
-* Availability: 0.11%
-
----
-
-## 🤖 Pretrained Model
+##  Pretrained Model
 
 Due to GitHub file size limits, the trained model is hosted externally.
 
@@ -114,17 +81,10 @@ Due to GitHub file size limits, the trained model is hosted externally.
 
 ---
 
-## 🎯 Objective
+##  Objective
 
 To enable **efficient spectrum utilization** by automatically detecting free channels and avoiding interference using AI.
 
----
-
-## 🚀 Future Work
-
-* Reinforcement Learning for dynamic channel selection
-* Real-time implementation using SDR
-* Extension to 5G/6G networks
 
 ---
 
