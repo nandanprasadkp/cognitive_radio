@@ -52,32 +52,17 @@ pip install -r requirements.txt
 ##  How to Run
 
 ### Step 1: Generate Dataset (MATLAB)
-
 Run the Simulink model and export dataset.
-
----
 
 ### Step 2: Train Model
 
-```
-python train.py
-```
-
----
-
 ### Step 3: Predict Spectrum
-
-```
-python predict.py
-
----
-
 
 ##  Pretrained Model
 
 Due to GitHub file size limits, the trained model is hosted externally.
 
-📥 [Download Model](https://drive.google.com/your-link-here)
+📥 [Download Model](https://drive.google.com/file/d/17ox-KMO5_wi5cnvvWV9G3nSoayL0T1qX/view?usp=sharing)
 
 ---
 
@@ -87,11 +72,6 @@ To enable **efficient spectrum utilization** by automatically detecting free cha
 
 
 ---
-
-## 👨‍💻 Authors
-
-* Nandan
-* Shreyas
 
 
 
