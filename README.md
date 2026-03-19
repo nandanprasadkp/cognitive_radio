@@ -7,7 +7,7 @@ This project implements a **Cognitive Radio system** using **MATLAB Simulink and
 
 # System Workflow
 
-Simulink → Signal Generation → Dataset Export → CNN Model → Spectrum Prediction → Channel Selection
+Simulink >> Signal Generation >> Dataset Export >> CNN Model >> Spectrum Prediction >> Channel Selection
 
 # Key Features
 
@@ -29,7 +29,7 @@ Simulink → Signal Generation → Dataset Export → CNN Model → Spectrum Pre
 * MATLAB
 * Simulink 
 * Python
-* Keras
+* Keras 
 * NumPy 
 
 # Project Structure
