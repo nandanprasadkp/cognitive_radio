@@ -1,80 +1,138 @@
-﻿# Cognitive Radio Project
-# AI-Based Cognitive Radio Project
+#  AI-Based Cognitive Radio System
 
-# Overview
+##  Overview
 
-This project implements a **Cognitive Radio system** using **MATLAB Simulink and Deep Learning (CNN)** to detect free and occupied spectrum channels dynamically.
+This project implements a **Cognitive Radio system** using **MATLAB Simulink and Deep Learning (CNN)** to intelligently detect free and occupied spectrum channels.
 
-# System Workflow
+The system simulates a multi-channel wireless environment and applies AI to perform **automatic spectrum sensing and channel selection**.
 
-Simulink >> Signal Generation >> Dataset Export >> CNN Model >> Spectrum Prediction >> Channel Selection
+---
 
-# Key Features
+## System Flow
+
+Simulink → Signal Generation → Dataset Export → CNN Training → Prediction → Free Channel Selection
+
+---
+
+## Key Features
 
 * Multi-channel RF signal simulation (5 channels)
-* Dynamic channel activity using random switching
-* Noise-aware realistic environment (AWGN)
+* Random channel activity using Bernoulli switching
+* Realistic environment with AWGN noise
 * CNN-based spectrum sensing
-* Automatic free channel detection
+* Automatic detection of free and occupied channels
 
-# Results
+---
 
-* Total Windows Scanned: 8104
+## Workflow
+
+1. Run Simulink model to generate RF signal
+2. Export dataset in MATLAB
+3. Train CNN model using Python
+4. Predict spectrum occupancy
+5. Identify free channels
+
+---
+
+##  Requirements
+
+Install dependencies:
+
+pip install -r requirements.txt
+
+### Libraries Used
+
+* tensorflow==2.15.0
+* numpy==1.24.3
+* pandas==2.1.0
+* scipy==1.11.2
+
+---
+
+## ▶️ How to Run
+
+### Step 1: Generate Dataset (MATLAB)
+
+Run the Simulink model and export dataset.
+
+---
+
+### Step 2: Train Model
+
+```
+python train.py
+```
+
+---
+
+### Step 3: Predict Spectrum
+
+```
+python predict.py
+```
+
+---
+
+## 📸 Simulink Model
+
+This shows the multi-channel signal generation setup.
+
+![Simulink](5-results/signalgenerationsetup.png)
+
+---
+
+## 📡 Generated Signal
+
+This represents the combined RF signal across channels.
+
+![Signal](5-results/generatedsignal.jpeg)
+
+---
+
+## 🤖 Output
+
+CNN detects occupied and free spectrum windows.
+
+![Output](5-results/output.jpeg)
+
+---
+
+## 📊 Output Summary
+
+* Total Windows: 8104
 * Busy Channels: 8095
 * Free Channels: 9
 * Availability: 0.11%
 
-# Technologies Used
+---
 
-* MATLAB
-* Simulink 
-* Python
-* Keras 
-* NumPy 
+## 🤖 Pretrained Model
 
-# Project Structure
+Due to GitHub file size limits, the trained model is hosted externally.
 
-cognitive_radio/
-│
-├── radiosignal.slx        # Simulink model
+📥 [Download Model](https://drive.google.com/your-link-here)
 
-├── dataset_clean.mat      # Generated dataset
+---
 
-├── train.py               # CNN training
+## 🎯 Objective
 
-├── predict.py             # Prediction script
+To enable **efficient spectrum utilization** by automatically detecting free channels and avoiding interference using AI.
 
-├── results.png            # Output screenshot
-└── README.md
+---
 
-# How to Run
+## 🚀 Future Work
 
-# 1. Generate Data (MATLAB)
+* Reinforcement Learning for dynamic channel selection
+* Real-time implementation using SDR
+* Extension to 5G/6G networks
 
-Run Simulink model and export dataset.
+---
 
-# 2. Train Model (Python)
-# requirements
- Core Machine Learning Framework
-*tensorflow==2.15.0
+## 👨‍💻 Authors
 
- Data Processing and Numerical Operations
-*numpy==1.24.3
-*pandas==2.1.0
+* Nandan
+* Shreyas
 
- Signal Processing (Required for loadmat)
-*scipy==1.11.2
-
- Utilities
-*pickle5; python_version < "3.8"
-*python train.py
-
-# 3. Predict Spectrum
-python predict.py
-
-# Objective
-
-To enable **intelligent spectrum utilization** by detecting free channels and avoiding interference.
 
 
 # Simulink Setup
