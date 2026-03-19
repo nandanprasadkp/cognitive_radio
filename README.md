@@ -37,9 +37,13 @@ Simulink >> Signal Generation >> Dataset Export >> CNN Model >> Spectrum Predict
 cognitive_radio/
 │
 ├── radiosignal.slx        # Simulink model
+
 ├── dataset_clean.mat      # Generated dataset
+
 ├── train.py               # CNN training
+
 ├── predict.py             # Prediction script
+
 ├── results.png            # Output screenshot
 └── README.md
 
