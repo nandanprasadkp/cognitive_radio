@@ -63,6 +63,23 @@ python predict.py
 
 To enable **intelligent spectrum utilization** by detecting free channels and avoiding interference.
 
+
+# Simulink Setup
+
+![Setup](results/signalgenerationsetup.png)
+
+---
+
+# Generated Signal
+
+![Signal](results/generatedsignal.jpeg)
+
+---
+
+#Output
+
+![Output](results/output.jpeg)
+---
 #Authors
 * Nandan(ECE NIE MYSORE)
 * Shreyas(AI NIT SURATKAL)
