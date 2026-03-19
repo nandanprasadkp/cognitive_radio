@@ -54,6 +54,19 @@ cognitive_radio/
 Run Simulink model and export dataset.
 
 # 2. Train Model (Python)
+# requirements
+ Core Machine Learning Framework
+tensorflow==2.15.0
+
+ Data Processing and Numerical Operations
+numpy==1.24.3
+pandas==2.1.0
+
+ Signal Processing (Required for loadmat)
+scipy==1.11.2
+
+ Utilities
+pickle5; python_version < "3.8"
 python train.py
 
 # 3. Predict Spectrum
